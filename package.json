@@ -9,7 +9,7 @@
     "webpack-cli": "^4.5.0"
   },
   "scripts": {
-    "start": "webpack"
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
