@@ -1,6 +1,6 @@
 
 import { run } from "./app/app";
-import "./css/style.css"
+import "./css/style.scss"
 import { Stars } from "./app/stars";
 import { IntroStory } from "./app/intro_story";
 
