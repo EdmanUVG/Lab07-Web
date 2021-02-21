@@ -22,6 +22,7 @@ export class Stars {
 			star.style.animationDuration = duration + 's';
 
 			// this.scene.appendChild(star);
+			console.log(i);
 			i++;
 		}
 	}
