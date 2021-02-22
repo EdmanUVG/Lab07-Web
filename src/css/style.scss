@@ -1,35 +1,53 @@
 
 @import "~bootstrap/scss/bootstrap";
+@import "~animate.css/source/animate.css";
+@import "./variables";
+@import "./header";
+@import "./next";
+@import "./footer";
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.navbar {
-    background: #01070a;
-}
-
-.scene {
-    position: relative;
-    width: 100%;
-    height: 83vh;
-    background: #01070a;
-    overflow: hidden;
+@mixin flexCenter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.scene i {
-    position: absolute;
-    top: -250px;
-    background: rgba(255, 255, 255, 0.5);
-    animation: animateStars linear infinite;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+.scene {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 129px);
+    background: $primaryBackground;
+    overflow: hidden;
+    @include flexCenter();
+
+    i {
+        position: absolute;
+        top: -250px;
+        background: rgba(255, 255, 255, 0.5);
+        animation: animateStars linear infinite;
+    }
+}
+
+.story {
+    #primero {
+        color: white;
+        animation: bounceInDown;
+        animation-duration: 4s;
+    }
+    h1 {
+        color: white;
+        animation: bounceInLeft;
+        animation-duration: 4s;
+    }
+}
+
 
 @keyframes animateStars 
 {
@@ -83,9 +101,7 @@
     filter: blur(20px);
 }
 
-footer {
-    background: #01070a;
-}
+
 
 
 
