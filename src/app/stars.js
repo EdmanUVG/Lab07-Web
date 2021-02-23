@@ -13,7 +13,7 @@ export class Stars {
 			let star = document.createElement('i');
 			let x =  Math.floor(Math.random() *  window.innerWidth);
 
-			let duration = Math.random() * 1;
+			let duration = Math.random() * 10;
 			let h = Math.random() * 100;
 
 			star.style.left = x + 'px';
@@ -21,8 +21,7 @@ export class Stars {
 			star.style.height = 50 + h + 'px';
 			star.style.animationDuration = duration + 's';
 
-			// this.scene.appendChild(star);
-			console.log(i);
+			this.scene.appendChild(star);
 			i++;
 		}
 	}

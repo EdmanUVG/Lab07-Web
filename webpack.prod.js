@@ -19,17 +19,81 @@ module.exports = merge(common, {
 			new OptimizeCssAssetsPlugin(), 
 			new TerserPlugin(),
 			new HtmlWebpackPlugin( {
+				filename: "index.html",
 				template: "./src/template.html",
 				minify: {
 					removeAttributeQuotes: true,
 					collapseWhitespace: true,
 					removeComments: true
 				}
-			})
+			}),
+			new HtmlWebpackPlugin( {
+				filename: "lunes.html",
+				template: "./src/lunes.html",
+				minify: {
+					removeAttributeQuotes: true,
+					collapseWhitespace: true,
+					removeComments: true
+				}
+			}),
+			new HtmlWebpackPlugin( {
+				filename: "martes.html",
+				template: "./src/martes.html",
+				minify: {
+					removeAttributeQuotes: true,
+					collapseWhitespace: true,
+					removeComments: true
+				}
+			}),
+			new HtmlWebpackPlugin( {
+				filename: "miercoles.html",
+				template: "./src/miercoles.html",
+				minify: {
+					removeAttributeQuotes: true,
+					collapseWhitespace: true,
+					removeComments: true
+				}
+			}),
+			new HtmlWebpackPlugin( {
+				filename: "jueves.html",
+				template: "./src/jueves.html",
+				minify: {
+					removeAttributeQuotes: true,
+					collapseWhitespace: true,
+					removeComments: true
+				}
+			}),
+			new HtmlWebpackPlugin( {
+				filename: "viernes.html",
+				template: "./src/viernes.html",
+				minify: {
+					removeAttributeQuotes: true,
+					collapseWhitespace: true,
+					removeComments: true
+				}
+			}),
+			new HtmlWebpackPlugin( {
+				filename: "sabado.html",
+				template: "./src/sabado.html",
+				minify: {
+					removeAttributeQuotes: true,
+					collapseWhitespace: true,
+					removeComments: true
+				}
+			}),
+			new HtmlWebpackPlugin( {
+				filename: "domingo.html",
+				template: "./src/domingo.html",
+				minify: {
+					removeAttributeQuotes: true,
+					collapseWhitespace: true,
+					removeComments: true
+				}
+			}),
 		]
 	},
 	plugins: [
-				new MiniCssExtractPlugin({ filename: "[name].[contenthash].css"}),
+				new MiniCssExtractPlugin({ filename: "[name].[contenthash].bundle.css"}),
 			 	new CleanWebpackPlugin()
 	],
 	module: {

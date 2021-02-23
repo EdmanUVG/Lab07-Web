@@ -14,8 +14,14 @@ module.exports = merge(common, {
 	},
 	plugins: [
 		new HtmlWebpackPlugin( {
+			filename: "index.html",
 			template: "./src/template.html"
-		})
+		}),
+		new HtmlWebpackPlugin( {
+			filename: "lunes.html",
+			template: "./src/lunes.html",
+			chunks: []
+		}),
 	],
 	module: {
 		rules: [

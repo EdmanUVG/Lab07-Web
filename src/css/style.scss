@@ -33,18 +33,48 @@
         background: rgba(255, 255, 255, 0.5);
         animation: animateStars linear infinite;
     }
-}
 
-.story {
-    #primero {
-        color: white;
-        animation: bounceInDown;
-        animation-duration: 4s;
+    .story {
+        
+        #primero {
+            color: white;
+            animation: bounceInDown;
+            animation-duration: 4s;
+        }
+
+        h1 {
+            color: white;
+            animation: bounceInLeft;
+            animation-duration: 4s;
+        }
     }
-    h1 {
-        color: white;
-        animation: bounceInLeft;
-        animation-duration: 4s;
+
+    .rocket {
+        position: relative;
+        animation: animate 0.2s ease infinite;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 200px;
+            background: linear-gradient(#00d0ff, transparent);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 200px;
+            background: linear-gradient(#00d0ff, transparent);
+            filter: blur(20px);
+        }
     }
 }
 
@@ -61,10 +91,6 @@
     }
 }
 
-.scene .rocket {
-    position: relative;
-    animation: animate 0.2s ease infinite;
-}
 
 @keyframes animate 
 {
@@ -78,28 +104,6 @@
     }
 }
 
-.scene .rocket::before {
-    content: '';
-    position: absolute;
-    bottom: -200px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 200px;
-    background: linear-gradient(#00d0ff, transparent);
-}
-
-.scene .rocket::after {
-    content: '';
-    position: absolute;
-    bottom: -200px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 200px;
-    background: linear-gradient(#00d0ff, transparent);
-    filter: blur(20px);
-}
 
 
 
