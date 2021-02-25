@@ -14,14 +14,16 @@ module.exports = {
 				use: ["html-loader"]
 			},
 			{
-				test: /\.(png|jpe?g|gif)$/i,
-				loader: "file-loader",
+				test: /\.(jpeg|png|jpg|svg|gif)$/i,
+				loader: 'file-loader',
 				options: {
-					name: '[name].[hash].[ext]',
-					outputPath: "img/",
-					publicPath: "img/"
-				},	
-			},
+					name: '[name].[hash:6].[ext]',
+					outputPath: 'images',
+					publicPath: 'images',
+					emitFile: true,
+					esModule: false
+				}
+			}
 		],
 	},
 };

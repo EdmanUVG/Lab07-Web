@@ -4,6 +4,11 @@
 @import "./variables";
 @import "./header";
 @import "./next";
+@import "./earth";
+@import "./robot";
+@import "./mars";
+@import "./moon";
+@import "./moon-sky";
 @import "./footer";
 
 
@@ -17,6 +22,7 @@
 * {
     margin: 0;
     padding: 0;
+    background: $primaryBackground;
 }
 
 .scene {
@@ -103,6 +109,8 @@
         transform: translateY(2px);
     }
 }
+
+
 
 
 

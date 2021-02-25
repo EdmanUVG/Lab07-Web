@@ -20,7 +20,7 @@ module.exports = merge(common, {
 			new TerserPlugin(),
 			new HtmlWebpackPlugin( {
 				filename: "index.html",
-				template: "./src/template.html",
+				template: "./src/views/template.html",
 				minify: {
 					removeAttributeQuotes: true,
 					collapseWhitespace: true,
@@ -28,8 +28,8 @@ module.exports = merge(common, {
 				}
 			}),
 			new HtmlWebpackPlugin( {
-				filename: "lunes.html",
-				template: "./src/lunes.html",
+				filename: "intro.html",
+				template: "./src/views/intro.html",
 				minify: {
 					removeAttributeQuotes: true,
 					collapseWhitespace: true,
@@ -37,8 +37,8 @@ module.exports = merge(common, {
 				}
 			}),
 			new HtmlWebpackPlugin( {
-				filename: "martes.html",
-				template: "./src/martes.html",
+				filename: "earth.html",
+				template: "./src/views/earth.html",
 				minify: {
 					removeAttributeQuotes: true,
 					collapseWhitespace: true,
@@ -46,8 +46,8 @@ module.exports = merge(common, {
 				}
 			}),
 			new HtmlWebpackPlugin( {
-				filename: "miercoles.html",
-				template: "./src/miercoles.html",
+				filename: "mars.html",
+				template: "./src/views/mars.html",
 				minify: {
 					removeAttributeQuotes: true,
 					collapseWhitespace: true,
@@ -55,8 +55,8 @@ module.exports = merge(common, {
 				}
 			}),
 			new HtmlWebpackPlugin( {
-				filename: "jueves.html",
-				template: "./src/jueves.html",
+				filename: "moon.html",
+				template: "./src/views/moon.html",
 				minify: {
 					removeAttributeQuotes: true,
 					collapseWhitespace: true,
@@ -64,8 +64,8 @@ module.exports = merge(common, {
 				}
 			}),
 			new HtmlWebpackPlugin( {
-				filename: "viernes.html",
-				template: "./src/viernes.html",
+				filename: "moon-sky.html",
+				template: "./src/views/moon-sky.html",
 				minify: {
 					removeAttributeQuotes: true,
 					collapseWhitespace: true,
@@ -74,7 +74,7 @@ module.exports = merge(common, {
 			}),
 			new HtmlWebpackPlugin( {
 				filename: "sabado.html",
-				template: "./src/sabado.html",
+				template: "./src/views/sabado.html",
 				minify: {
 					removeAttributeQuotes: true,
 					collapseWhitespace: true,
@@ -83,7 +83,7 @@ module.exports = merge(common, {
 			}),
 			new HtmlWebpackPlugin( {
 				filename: "domingo.html",
-				template: "./src/domingo.html",
+				template: "./src/views/domingo.html",
 				minify: {
 					removeAttributeQuotes: true,
 					collapseWhitespace: true,
@@ -105,7 +105,7 @@ module.exports = merge(common, {
 					"css-loader",     				// 2. Turns css into como js
 					"sass-loader"     				// 1. Turn sass into css
 				]
-			},
+			}
 		]
 	}
 });
