@@ -25,6 +25,37 @@
     background: $primaryBackground;
 }
 
+.container-fluid {
+    background:$primaryBackground;
+    height: calc(100vh - 50px);
+    // height: 100vh;
+}
+
+.col-4 {
+    background-color: $primaryBackground;
+    height: 40px;
+}
+
+.story {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
+    #primero {
+        color: white;
+        animation: bounceInDown;
+        animation-duration: 4s;
+    }
+
+    h1 {
+        color: white;
+        animation: bounceInLeft;
+        animation-duration: 4s;
+    }
+}
+
 .scene {
     position: relative;
     width: 100%;

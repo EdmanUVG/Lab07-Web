@@ -1,5 +1,17 @@
 @import "./variables";
 
+.robot {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 250px);
+  background: $primaryBackground;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .head{
 position: absolute;
    top:0;
@@ -22,10 +34,10 @@ position: absolute;
    top:0;
    left:0;
    right:0;
-   bottom:150;
+   bottom:150px;
    margin:auto;
-   height:40;
-   width:65;
+   height:40px;
+   width:65px;
    background:white;
    border-top-left-radius:20px;
    border-top-right-radius:20px;
@@ -164,8 +176,8 @@ heigth:10px;
   left:130px;
 }
 #switch-button:checked ~ .eye1{
-  transform:scale(0) translateY(-20px);
+  transform:scale(1) translateY(5px);
 }
 #switch-button:checked ~ .eye2{
-  transform:scale(0) translateY(-20px);
+  transform:scale(1) translateY(5px);
 }
