@@ -13,7 +13,7 @@
 }
 
 .head{
-position: absolute;
+  position: absolute;
    top:0;
    left:0;
    right:0;
@@ -108,8 +108,8 @@ position:absolute;
   border-top-right-radius:50px;
   border-bottom-left-radius:20px;
   border-bottom-right-radius:20px;
-  animation:blink 1s linear 2;
-  transition:.3s;
+  animation:blink 1s linear 4;
+  transition:.5s;
 }
 .eye2{
 position:absolute;
@@ -125,8 +125,8 @@ position:absolute;
   border-top-right-radius:50px;
   border-bottom-left-radius:20px;
   border-bottom-right-radius:20px;
-    animation:blink 1s linear 2;
-    transition:.3s;
+    animation:blink 1s linear 4;
+    transition:.5s;
 }
 @keyframes blink{
 0%{

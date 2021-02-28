@@ -1,16 +1,40 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~animate.css/source/animate.css";
 @import "./variables";
+@import "./header";
+@import "./next";
+
+.container-fluid {
+    background:$primaryBackground;
+    height: 100vh;
+}
+
+.col-4 {
+    background-color: $primaryBackground;
+    height: 40px;
+}
+
 
 .scenes {
     position: relative;
     width: 100%;
-    height: calc(100vh - 129px);
+    height: calc(100vh - 252px);
     background: $primaryBackground;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
+
+}
+
+.story {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
     #primero {
         color: white;
         animation: bounceInDown;
@@ -41,7 +65,7 @@
 .planet-earth {
     position: relative;
     min-width: 50%;
-    height: 100vh;
+    height: calc(100vh - 252px);
     justify-content: center;
     align-items: center;
     background: $primaryBackground;
@@ -107,7 +131,6 @@
     position: absolute;
     width: 300px;
     height: 300px;
-    background: url(../assets/earth.jpg);
     border-radius: 50%;
     background-size: cover;
     box-shadow: inset 0 0 20px #03a9f4,

@@ -2,9 +2,11 @@
 
 .navbar {
     background: $primaryBackground;
-    height: 35px;
+    height: 50px;
+    padding: 0;
 }
 
-    .navbar-brand {
-    	padding-top: 35px;
-    }
+.navbar-brand {
+    padding-top: 15px;
+    padding-bottom: 0;
+}

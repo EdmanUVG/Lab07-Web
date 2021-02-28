@@ -9,6 +9,7 @@ export class Stars {
 	getStars() {
 		let count = 20;
 		let i = 0;
+		
 		while (i < count) {
 			let star = document.createElement('i');
 			let x =  Math.floor(Math.random() *  window.innerWidth);
@@ -22,7 +23,7 @@ export class Stars {
 			star.style.animationDuration = duration + 's';
 
 			this.scene.appendChild(star);
-			
+			console.log(i);
 			i++;
 		}
 	}

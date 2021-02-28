@@ -4,20 +4,12 @@
 @import "./variables";
 @import "./header";
 @import "./next";
-@import "./earth";
-@import "./robot";
-@import "./mars";
-@import "./moon";
-@import "./moon-sky";
-@import "./footer";
-
-
-@mixin flexCenter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+// @import "./earth";
+// @import "./robot";
+// @import "./mars";
+// @import "./moon";
+// @import "./moon-sky";
+// @import "./footer";
 
 * {
     margin: 0;
@@ -28,8 +20,9 @@
 .container-fluid {
     background:$primaryBackground;
     height: calc(100vh - 50px);
-    // height: 100vh;
 }
+
+
 
 .col-4 {
     background-color: $primaryBackground;
@@ -59,10 +52,13 @@
 .scene {
     position: relative;
     width: 100%;
-    height: calc(100vh - 129px);
+    height: calc(100vh - 144px);
     background: $primaryBackground;
     overflow: hidden;
-    @include flexCenter();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     i {
         position: absolute;
@@ -88,7 +84,8 @@
 
     .rocket {
         position: relative;
-        animation: animate 0.2s ease infinite;
+        top: 100px;
+        animation: animate 3s ease infinite;
 
         &::before {
             content: '';
@@ -131,13 +128,19 @@
 
 @keyframes animate 
 {
-    0%, 100%
+    0%
     {
-        transform: translateY(-2px);
+        transform: rotate(30deg);
     }
-    50%
-    {
-        transform: translateY(2px);
+    50% {
+        transform: translate(250px, -150px);
+    }
+    60% {
+        transform: translate(250px, -150px) rotate(30deg) ;
+    }
+
+    100% {
+        transform: translate(500px, -300px) rotate(30deg);
     }
 }
 
