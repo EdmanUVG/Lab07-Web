@@ -1,6 +1,6 @@
 import { createNav } from './nav';
-import '../css/_robot.scss';
-import '../css/style.scss';
+import '../css/_intro.scss';
+import '../css/_footer.scss';
 import '../../node_modules/bootstrap/dist/js/bootstrap.js';
 
 const nav = createNav();

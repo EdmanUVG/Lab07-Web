@@ -1,0 +1,208 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~animate.css/source/animate.css";
+@import "./normalize";
+@import "./variables";
+@import "./navbar";
+@import "./next";
+
+.row-solar {
+    height: calc(100vh - 252px);
+}
+
+
+.order {
+    height: calc(100vh - 252px) !important;
+}
+
+.spinner-box {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.circle-border {
+    width: 250px;
+    height: 250px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(246, 249, 63);
+    background: linear-gradient(0deg, rgba(63, 249, 220, 0.1)33%, rgb(248, 248, 246)100%);
+    animation: spin 0.8s linear 0s infinite;
+}
+
+.circle-core {
+    width: 100%;
+    height: 100%;
+    background: $primaryBackground;
+    border-radius: 50%;  
+}
+
+.solar-system {
+    width: 550px;
+    display: flex;
+    background: $primaryBackground;
+    justify-content: center;
+    align-items: center;
+}
+
+.orbit {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fafbfc;
+    border-radius: 50%;
+}
+
+.earth-orbit {
+    width: 265px;
+    height: 265px;
+    background: $primaryBackground;
+    animation: spin 12s linear 0s infinite;
+}
+
+.venus-orbit {
+    width: 200px;
+    height: 200px;
+    background: $primaryBackground;
+    animation: spin 7.4s linear 0s infinite;
+}
+
+.mercury-orbit {
+    width: 100px;
+    height: 100px;
+    background: $primaryBackground;
+    animation: spin 3s linear 0s infinite;
+}
+
+.planet {
+    position: absolute;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.col-4 {
+    background-color: $primaryBackground;
+    height: 40px;
+}
+
+.scenes {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 252px);
+    background: $primaryBackground;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff3c00;
+}
+
+.leo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.blue-orbit {
+    width: 165px;
+    height: 165px;
+    background: $primaryBackground;
+    border: 1px solid #91daff;
+    animation: spin3D 6s linear .2s infinite;
+}
+
+.green-orbit {
+    width: 120px;
+    height: 120px;
+    background: $primaryBackground;
+    border: 1px solid #91daff;
+    animation: spin3D 4s linear .0s infinite;
+}
+
+.red-orbit {
+    width: 90px;
+    height: 90px;
+    background: $primaryBackground;
+    border: 1px solid #ffca91;
+    animation: spin3D 2s linear .0s infinite;
+}
+
+.white-orbit {
+    width: 60px;
+    height: 60px;
+    background: $primaryBackground;
+    border: 2px solid #ffffff;
+    animation: spin3D 10s linear .0s infinite;
+}
+
+.w1 {
+    transform: rotate3d(1, 1, 1, 98deg);
+}
+
+.w2 {
+    transform: rotate3d(1, 2, .5, 90deg);
+}
+
+.w3 {
+    transform: rotate3d(.5, 1, 2, 90deg);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes spin3D {
+    from {
+        transform: rotate3d(.5, .5, .5, 360deg);
+    }
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes configure-clockwise {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+

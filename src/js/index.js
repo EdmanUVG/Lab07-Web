@@ -1,7 +1,7 @@
 
 import { createNav } from './nav';
 import { Stars } from './stars';
-import '../css/style.scss';
+import '../css/_index.scss';
 import rocketImg from '../images/rocket.png';
 import '../../node_modules/bootstrap/dist/js/bootstrap.js'
 
@@ -14,9 +14,6 @@ rocket.src = rocketImg;
 const stars = new Stars();
 stars.getStars();
 
-
-// const stars = createStars();
-// document.getElementsByClassName("scene").appendChild(stars);
 
 
 

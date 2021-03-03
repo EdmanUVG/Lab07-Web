@@ -1,28 +1,11 @@
 
 @import "~bootstrap/scss/bootstrap";
 @import "~animate.css/source/animate.css";
+@import "./normalize";
 @import "./variables";
-@import "./header";
+@import "./navbar";
 @import "./next";
-// @import "./earth";
-// @import "./robot";
-// @import "./mars";
-// @import "./moon";
-// @import "./moon-sky";
-// @import "./footer";
-
-* {
-    margin: 0;
-    padding: 0;
-    background: $primaryBackground;
-}
-
-.container-fluid {
-    background:$primaryBackground;
-    height: calc(100vh - 50px);
-}
-
-
+@import "./footer";
 
 .col-4 {
     background-color: $primaryBackground;
@@ -87,6 +70,10 @@
         top: 100px;
         animation: animate 3s ease infinite;
 
+        img {
+            background: $primaryBackground;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -126,10 +113,8 @@
 }
 
 
-@keyframes animate 
-{
-    0%
-    {
+@keyframes animate {
+    0% {
         transform: rotate(30deg);
     }
     50% {

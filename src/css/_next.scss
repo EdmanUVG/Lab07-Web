@@ -1,5 +1,9 @@
 @import "./variables";
 
+.col-4 {
+    height: 44px !important;
+}
+
 .next {
     display: flex;
     flex-direction: row-reverse;

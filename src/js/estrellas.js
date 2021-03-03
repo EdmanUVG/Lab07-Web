@@ -2,6 +2,7 @@
 export class Estrellas {
     constructor() {
         this.scene = document.querySelector(".moon-scene");
+        this.story = document.querySelector(".story");
     }
 
     getEstrellas() {
@@ -24,7 +25,7 @@ export class Estrellas {
             star.style.animationDelay = duration  + 's';
         
             this.scene.appendChild(star);
-            console.log(i);
+            // this.story.appendChild(star);
             i++;
         }
     }

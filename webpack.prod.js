@@ -15,6 +15,7 @@ module.exports = {
 		mars: './src/start-mars.js',
 		moon: './src/start-moon.js',
 		night: './src/start-night.js',
+		solar: './src/start-solar.js',
 		thanks: './src/start-thanks.js'
 	},
 	output: {
@@ -85,15 +86,16 @@ module.exports = {
 					removeComments: true
 				}
 			}),
-			// new HtmlWebpackPlugin( {
-			// 	filename: "sabado.html",
-			// 	template: "./src/views/sabado.html",
-			// 	minify: {
-			// 		removeAttributeQuotes: true,
-			// 		collapseWhitespace: true,
-			// 		removeComments: true
-			// 	}
-			// }),
+			new HtmlWebpackPlugin( {
+				template: "./src/views/solar.html",
+				filename: "solar.html",
+				chunks: ["solar"],
+				minify: {
+					removeAttributeQuotes: true,
+					collapseWhitespace: true,
+					removeComments: true
+				}
+			}),
 			new HtmlWebpackPlugin( {
 				filename: "thanks.html",
 				template: "./src/views/thanks.html",

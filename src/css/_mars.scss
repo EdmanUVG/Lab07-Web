@@ -1,13 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~animate.css/source/animate.css";
+@import "./normalize";
 @import "./variables";
-@import "./header";
+@import "./navbar";
 @import "./next";
 
-.container-fluid {
-    background:$primaryBackground;
-    height: 100vh;
-}
 
 .col-4 {
     background-color: $primaryBackground;
@@ -29,22 +26,25 @@
 .story {
     overflow: hidden;
     display: flex;
+    background: $primaryBackground;
     flex-direction: column;
     justify-content: center;
     align-items: center;
         
     #primero {
         color: white;
+        background: $primaryBackground;
         animation: bounceInDown;
         animation-duration: 4s;
     }
-
+  
     h1 {
         color: white;
+        background: $primaryBackground;
         animation: bounceInLeft;
         animation-duration: 4s;
     }
-}
+  }
 
 .planet {
     display: flex;
